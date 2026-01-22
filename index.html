@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Helpdesk Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chatbot">
+  <div class="header">🎓 Student Helpdesk Bot</div>
+
+  <div class="messages" id="messages">
+    <div class="bot">Hello 👋 I’m your Student Helpdesk Bot. How can I help you?</div>
+  </div>
+
+  <div class="quick-buttons">
+    <button onclick="quickAsk('college timing')">College Timing</button>
+    <button onclick="quickAsk('fees structure')">Fees</button>
+    <button onclick="quickAsk('courses')">Courses</button>
+    <button onclick="quickAsk('student portal')">Student Portal</button>
+  </div>
+
+  <div class="typing" id="typing">Bot is typing...</div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your question...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
